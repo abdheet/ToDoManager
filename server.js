@@ -6,7 +6,6 @@ const app = express()
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
-g
 
 app.use('/todos',todoRoute)
 app.use('/notes',noteRoute)
