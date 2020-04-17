@@ -7,8 +7,12 @@ const app = express()
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
+var distDir = __dirname + "/public/";
+app.use(express.static(distDir));
+
 app.use('/todos',todoRoute)
 app.use('/notes',noteRoute)
+
 
 
 db.sync()
