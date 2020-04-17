@@ -6,7 +6,7 @@ const app = express()
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
-
+app.use('/Assets', express.static(__dirname + 'Assets'))
 var distDir = __dirname + "/public/";
 app.use(express.static(distDir));
 

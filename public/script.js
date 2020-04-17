@@ -76,18 +76,6 @@ async function getTodos() {
 
 }
 
-// async function addNewTodoUrlEncoded(task, done, due) {
-
-//   const resp = await fetch('/todos', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/x-www-form-urlencoded'
-//     },
-//     body: `task=${task}&done=${done}&due=2020-04-05`
-//   })
-
-// }
-
 async function addNewTodoJson(task,description,due, done,Priority) {
 
   const resp = await fetch('/todos', {
