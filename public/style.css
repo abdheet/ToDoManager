@@ -19,7 +19,7 @@ body{
     padding-right: 250px;
 }
 #list{
-  background-color: darkgrey;
+  background-color: whitesmoke;
   z-index: -999;
 }
 
@@ -116,7 +116,7 @@ td, th {
     margin-top:30px
     }
     h2 {
-    background-color:rgb(255, 249, 237);
+    background-color:lightgray;
     padding:20px 35px;
     margin:-10px -50px;
     text-align:center;
