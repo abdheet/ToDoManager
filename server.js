@@ -6,8 +6,7 @@ const app = express()
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
-app.use('/Assets', express.static(__dirname + 'Assets'))
-app.use('/', express.static(__dirname + '/public'))
+g
 
 app.use('/todos',todoRoute)
 app.use('/notes',noteRoute)
